@@ -11,7 +11,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("📞 PayMentor Implementation for Charter - Testing Environmentr")
+st.title("📞 PayMentor Implementation for Charter - Testing Environment")
 st.write("Enter the customer's information and click **Place Call**.")
 
 st.divider()
@@ -21,8 +21,7 @@ st.divider()
 # -----------------------------------------------------------------------------
 
 phone = st.text_input(
-    "Phone Number",
-    placeholder="5551234567"
+    "Phone Number"
 )
 
 col1, col2 = st.columns(2)
