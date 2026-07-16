@@ -6,12 +6,12 @@ import requests
 # -----------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="Customer Call Center",
+    page_title="PayMentor Testing Env",
     page_icon="📞",
     layout="centered"
 )
 
-st.title("📞 Customer Call Center")
+st.title("📞 PayMentor Implementation for Charter - Testing Environmentr")
 st.write("Enter the customer's information and click **Place Call**.")
 
 st.divider()
@@ -28,10 +28,10 @@ phone = st.text_input(
 col1, col2 = st.columns(2)
 
 with col1:
-    first_name = st.text_input("First Name")
+    first_name = st.text_input("First Name", value='John')
 
 with col2:
-    last_name = st.text_input("Last Name")
+    last_name = st.text_input("Last Name", value='Doe')
 
 st.divider()
 
