@@ -20,9 +20,11 @@ st.divider()
 # Customer Information
 # -----------------------------------------------------------------------------
 
-phone = st.text_input(
-    "Phone Number"
-)
+col1, col2 = st.columns(2)
+with col1:
+    country_code = st.text_input("Country Code", value='+1')
+with col2:
+    phone = st.text_input("Phone Number")
 
 col1, col2 = st.columns(2)
 
@@ -95,7 +97,7 @@ if st.button("📞 Place Call", type="primary", use_container_width=True):
         st.stop()
 
     params = {
-        "countryCode": "+1",
+        "countryCode": country_code.strip(),
         "phoneNumber": phone.strip(),
         "firstName": first_name.strip(),
         "lastName": last_name.strip(),
